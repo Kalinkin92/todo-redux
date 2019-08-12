@@ -139,9 +139,9 @@ export default class App extends Component {
 
                 <TodoList
                   // todos={ filteredData }
-                  onDeleted={ this.deleteItem }
-                  onDone={ this.doneItem }
-                  onMarkImportant={ this.markItem }
+                  // onDeleted={ this.deleteItem }
+                  // onDone={ this.doneItem }
+                  // onMarkImportant={ this.markItem }
                 />
 
                 <ItemAddForm onItemAdded={this.addItem}/>
