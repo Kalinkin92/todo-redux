@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 
 import AppHeader from '../app-header';
 import SearchPanel from '../search-panel';
@@ -137,7 +138,7 @@ export default class App extends Component {
                 </div>
 
                 <TodoList
-                  todos={ filteredData }
+                  // todos={ filteredData }
                   onDeleted={ this.deleteItem }
                   onDone={ this.doneItem }
                   onMarkImportant={ this.markItem }

@@ -1,11 +1,12 @@
 import React from 'react';
+import { connect } from 'react-redux';
 
 import TodoListItem from '../todo-list-item';
 import './todo-list.css';
 
-const TodoList = ({ todos, onDeleted, onDone, onMarkImportant }) => {
+const TodoList = ({ todoData, onDeleted, onDone, onMarkImportant }) => {
 
-  const elements = todos.map((item) => {
+  const elements = todoData.map((item) => {
     const { id, ...itemProps } = item;
 
     return (
@@ -26,4 +27,12 @@ const TodoList = ({ todos, onDeleted, onDone, onMarkImportant }) => {
   );
 };
 
-export default TodoList;
+const mapStateToProps = (state) => {
+    const { todoData } = state;
+    return {
+        todoData
+    }
+};
+const mapDispatchToProps = (dispatch) => {};
+
+export default connect(mapStateToProps, mapDispatchToProps)(TodoList);
