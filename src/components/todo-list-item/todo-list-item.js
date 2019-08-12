@@ -4,7 +4,7 @@ import './todo-list-item.css';
 
 const TodoListItem = (props) => {
 
-    const { label, done, important, onDeleted } = props;
+    const { label, done, important, onDeleted, onMarkImportant } = props;
 
     let classNames = 'todo-list-item';
     if (done) {
@@ -18,7 +18,7 @@ const TodoListItem = (props) => {
         <span className={classNames}>
         <span
             className="todo-list-item-label"
-            onClick={ () => alert('todo-list-item-label') }>
+            onClick={ onMarkImportant }>
           {label}
         </span>
 

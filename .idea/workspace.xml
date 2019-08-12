@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1fccb5b2-6e85-46dd-9f4f-5667c27ceb9c" name="Default" comment="">
+    <list default="true" id="1fccb5b2-6e85-46dd-9f4f-5667c27ceb9c" name="Default" comment="DELETE_TODO">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/actions/actions.js" afterPath="$PROJECT_DIR$/src/actions/actions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/app/app.js" afterPath="$PROJECT_DIR$/src/components/app/app.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/todo-list-item/todo-list-item.js" afterPath="$PROJECT_DIR$/src/components/todo-list-item/todo-list-item.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/todo-list/todo-list.js" afterPath="$PROJECT_DIR$/src/components/todo-list/todo-list.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/reducer/reducer.js" afterPath="$PROJECT_DIR$/src/reducer/reducer.js" />
@@ -22,11 +21,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="reducer.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="reducer.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/reducer/reducer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="24" column="24" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="24" />
+            <state relative-caret-position="858">
+              <caret line="39" column="22" lean-forward="false" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="22" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -37,13 +36,12 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/app/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="614">
-              <caret line="144" column="18" lean-forward="true" selection-start-line="144" selection-start-column="18" selection-end-line="144" selection-end-column="18" />
+            <state relative-caret-position="289">
+              <caret line="78" column="41" lean-forward="true" selection-start-line="78" selection-start-column="41" selection-end-line="86" selection-end-column="14" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
                 <element signature="e#1311#1642#0" expanded="false" />
                 <element signature="e#1668#1966#0" expanded="false" />
-                <element signature="e#1992#2300#0" expanded="false" />
                 <element signature="e#2334#2375#0" expanded="false" />
                 <element signature="e#2409#2448#0" expanded="false" />
                 <element signature="e#2573#2829#0" expanded="false" />
@@ -56,8 +54,8 @@
       <file leaf-file-name="todo-list.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/todo-list/todo-list.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+            <state relative-caret-position="462">
+              <caret line="21" column="25" lean-forward="false" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="25" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -68,18 +66,18 @@
       <file leaf-file-name="todo-list-item.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/todo-list-item/todo-list-item.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="6" column="12" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+            <state relative-caret-position="396">
+              <caret line="20" column="22" lean-forward="false" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="actions.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="actions.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/actions/actions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="9" column="29" lean-forward="true" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+            <state relative-caret-position="352">
+              <caret line="16" column="19" lean-forward="false" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -114,10 +112,10 @@
         <option value="$PROJECT_DIR$/src/components/app-header/app-header.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/components/app/app.js" />
-        <option value="$PROJECT_DIR$/src/actions/actions.js" />
+        <option value="$PROJECT_DIR$/src/reducer/reducer.js" />
         <option value="$PROJECT_DIR$/src/components/todo-list/todo-list.js" />
         <option value="$PROJECT_DIR$/src/components/todo-list-item/todo-list-item.js" />
-        <option value="$PROJECT_DIR$/src/reducer/reducer.js" />
+        <option value="$PROJECT_DIR$/src/actions/actions.js" />
       </list>
     </option>
   </component>
@@ -348,7 +346,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1565633976654</updated>
-      <workItem from="1565633977849" duration="4528000" />
+      <workItem from="1565633977849" duration="5110000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1565634306776</created>
@@ -378,11 +376,18 @@
       <option name="project" value="LOCAL" />
       <updated>1565636692196</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="DELETE_TODO">
+      <created>1565638521680</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1565638521680</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4528000" />
+    <option name="totallyTimeSpent" value="5110000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="960" height="1040" extended-state="0" />
@@ -418,7 +423,8 @@
     <MESSAGE value="clean project" />
     <MESSAGE value="not a redux todo list" />
     <MESSAGE value="Привет из стореджа" />
-    <option name="LAST_COMMIT_MESSAGE" value="Привет из стореджа" />
+    <MESSAGE value="DELETE_TODO" />
+    <option name="LAST_COMMIT_MESSAGE" value="DELETE_TODO" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -554,7 +560,7 @@
         <state relative-caret-position="132">
           <caret line="6" column="16" lean-forward="true" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#26#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -564,7 +570,7 @@
         <state relative-caret-position="-2542">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -582,20 +588,19 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#36#0" expanded="true" />
+            <element signature="e#0#36#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/app/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="614">
-          <caret line="144" column="18" lean-forward="true" selection-start-line="144" selection-start-column="18" selection-end-line="144" selection-end-column="18" />
+        <state relative-caret-position="289">
+          <caret line="78" column="41" lean-forward="true" selection-start-line="78" selection-start-column="41" selection-end-line="86" selection-end-column="14" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
             <element signature="e#1311#1642#0" expanded="false" />
             <element signature="e#1668#1966#0" expanded="false" />
-            <element signature="e#1992#2300#0" expanded="false" />
             <element signature="e#2334#2375#0" expanded="false" />
             <element signature="e#2409#2448#0" expanded="false" />
             <element signature="e#2573#2829#0" expanded="false" />
@@ -604,18 +609,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/todo-list/todo-list.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="21" column="25" lean-forward="false" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/todo-list-item/todo-list-item.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="6" column="12" lean-forward="false" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+        <state relative-caret-position="396">
+          <caret line="20" column="22" lean-forward="false" selection-start-line="20" selection-start-column="22" selection-end-line="20" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/todo-list/todo-list.js">
+    <entry file="file://$PROJECT_DIR$/src/reducer/reducer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
+        <state relative-caret-position="858">
+          <caret line="39" column="22" lean-forward="false" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="22" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
@@ -624,19 +639,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/actions/actions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="29" lean-forward="true" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+        <state relative-caret-position="352">
+          <caret line="16" column="19" lean-forward="false" selection-start-line="16" selection-start-column="10" selection-end-line="16" selection-end-column="19" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/reducer/reducer.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="24" column="24" lean-forward="false" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

@@ -2,7 +2,8 @@ import React from 'react';
 
 import {
     ADD_TODO,
-    DELETE_TODO
+    DELETE_TODO,
+    MARK_TODO
 } from '../actions/actions'
 
 const initialState = {
@@ -22,7 +23,7 @@ const reducer = (state = initialState, action) => {
             return {
                 ...state
             };
-        case DELETE_TODO:
+        case DELETE_TODO: {
             const id = action.payload;
             const { todoData } = state;
             const idx = todoData.findIndex((el) => el.id === id);
@@ -34,6 +35,23 @@ const reducer = (state = initialState, action) => {
                     ...todoData.slice(idx + 1)
                 ]
             };
+
+        }
+        case MARK_TODO: {
+            const id = action.payload;
+            const { todoData } = state;
+            const idx = todoData.findIndex((el) => el.id === id);
+
+            const newArray = [...todoData];
+            newArray[idx].important = !newArray[idx].important;
+
+            return {
+                ...state,
+                todoData: newArray
+            };
+
+
+        }
         default:
             return state
     }
