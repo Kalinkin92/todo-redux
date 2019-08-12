@@ -15,15 +15,29 @@ const initialState = {
         { label: 'Привет из стореджа', important: false, done: false, id: 4 }
     ],
     filter: '',
-    status: 'all'
+    status: 'all',
+    max: 100
 };
 
 const reducer = (state = initialState, action) => {
     switch (action.type) {
-        case ADD_TODO:
-            return {
-                ...state
+        case ADD_TODO: {
+            const text = action.payload;
+            const { todoData } = state;
+            const newItem = {
+                label: text,
+                important: false,
+                id: state.max++
             };
+
+            return {
+                todoData: [
+                    ...todoData,
+                    newItem
+                ]
+            };
+
+        }
         case DELETE_TODO: {
             const id = action.payload;
             const { todoData } = state;

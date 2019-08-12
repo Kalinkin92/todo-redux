@@ -4,9 +4,9 @@ const
     DONE_TODO = 'DONE_TODO',
     MARK_TODO = 'MARK_TODO';
 
-const addTodo = (payload) => ({
+const addTodo = (text) => ({
     type: ADD_TODO,
-    payload
+    payload: text
 });
 
 const deleteTodo = (id) => ({

@@ -27,21 +27,6 @@ export default class App extends Component {
         status: 'all'
     };
 
-    deleteItem = (id) => {
-    this.setState(({ todoData }) => {
-      const idx = todoData.findIndex((el) => el.id === id);
-
-      const newArray = [
-        ...todoData.slice(0, idx),
-        ...todoData.slice(idx + 1)
-      ];
-
-      return {
-        todoData: newArray
-      };
-    });
-  };
-
     addItem = (text) => {
         const newItem = {
           label: text,
@@ -60,32 +45,6 @@ export default class App extends Component {
           };
         });
 
-    };
-
-    doneItem = (id) => {
-        this.setState(({ todoData }) => {
-            const idx = todoData.findIndex((el) => el.id === id);
-
-            const newArray = [...todoData];
-            newArray[idx].done = !newArray[idx].done;
-
-            return {
-                todoData: newArray
-            };
-        });
-    };
-
-    markItem = (id) => {
-        this.setState(({ todoData }) => {
-            const idx = todoData.findIndex((el) => el.id === id);
-
-            const newArray = [...todoData];
-            newArray[idx].important = !newArray[idx].important;
-
-            return {
-                todoData: newArray
-            };
-        });
     };
 
     changeFilter = (filter) => {
@@ -137,14 +96,11 @@ export default class App extends Component {
                   />
                 </div>
 
-                <TodoList
-                  // todos={ filteredData }
-                  // onDeleted={ this.deleteItem }
-                  // onDone={ this.doneItem }
-                  // onMarkImportant={ this.markItem }
-                />
+                <TodoList />
 
-                <ItemAddForm onItemAdded={this.addItem}/>
+                <ItemAddForm
+                    // onItemAdded={this.addItem}
+                />
             </div>
         );
   }

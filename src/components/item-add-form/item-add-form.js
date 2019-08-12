@@ -1,8 +1,12 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import {
+    addTodo
+} from '../../actions/actions';
 
 import './item-add-form.css';
 
-export default class ItemAddForm extends Component {
+class ItemAddForm extends Component {
 
   state = {
     label: ''
@@ -16,7 +20,7 @@ export default class ItemAddForm extends Component {
 
   onSUbmit = (e) => {
     e.preventDefault();
-    this.props.onItemAdded(this.state.label);
+    this.props.addTodo(this.state.label);
     this.setState({
         label: ''
     });
@@ -40,3 +44,17 @@ export default class ItemAddForm extends Component {
     )
   }
 }
+
+const mapStateToProps = (state) => {
+    // const { todoData } = state;
+    return {
+        // todoData
+    }
+};
+const mapDispatchToProps = (dispatch) => {
+    return {
+        addTodo: (text) => dispatch(addTodo(text))
+    }
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(ItemAddForm);
