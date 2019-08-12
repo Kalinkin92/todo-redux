@@ -3,7 +3,8 @@ import React from 'react';
 import {
     ADD_TODO,
     DELETE_TODO,
-    MARK_TODO
+    MARK_TODO,
+    DONE_TODO
 } from '../actions/actions'
 
 const initialState = {
@@ -49,8 +50,18 @@ const reducer = (state = initialState, action) => {
                 ...state,
                 todoData: newArray
             };
+        }
+        case DONE_TODO: {
+            const id = action.payload;
+            const { todoData } = state;
+            const idx = todoData.findIndex((el) => el.id === id);
 
+            const newArray = [...todoData];
+            newArray[idx].done = !newArray[idx].done;
 
+            return {
+                todoData: newArray
+            };
         }
         default:
             return state

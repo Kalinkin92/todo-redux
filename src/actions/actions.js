@@ -1,6 +1,7 @@
 const
     ADD_TODO = 'ADD_TODO',
     DELETE_TODO = 'DELETE_TODO',
+    DONE_TODO = 'DONE_TODO',
     MARK_TODO = 'MARK_TODO';
 
 const addTodo = (payload) => ({
@@ -18,11 +19,18 @@ const markTodo = (id) => ({
     payload: id
 });
 
+const doneTodo = (id) => ({
+    type: DONE_TODO,
+    payload: id
+});
+
 export {
     ADD_TODO,
     DELETE_TODO,
     MARK_TODO,
+    DONE_TODO,
     addTodo,
     deleteTodo,
-    markTodo
+    markTodo,
+    doneTodo
 }
