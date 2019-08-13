@@ -5,7 +5,8 @@ import {
     DELETE_TODO,
     MARK_TODO,
     DONE_TODO,
-    EDIT_TODO
+    EDIT_TODO,
+    SORT_TODO
 } from '../actions/actions'
 
 const initialState = {
@@ -18,7 +19,7 @@ const initialState = {
     filter: '',
     status: 'all',
     max: 100,
-    sort: 'dec'
+    sort: 'num' //alpha
 };
 
 const reducer = (state = initialState, action) => {
@@ -97,6 +98,37 @@ const reducer = (state = initialState, action) => {
                 todoData: newArray
             };
 
+        }
+        case SORT_TODO: {
+            // const order = action.payload;
+            const { sort, todoData } = state;
+            const alphaSort = (a, b) => {
+                if (a.label > b.label) {
+                    return 1;
+                }
+                if (a.label < b.label) {
+                    return -1;
+                }
+                return 0;
+            };
+
+            const numSort = (a, b) => {
+                if (a.id > b.id) {
+                    return 1;
+                }
+                if (a.id < b.id) {
+                    return -1;
+                }
+                return 0;
+            };
+
+            const newArray = [...todoData.sort(sort === 'num' ? alphaSort : numSort)];
+
+            return {
+                ...state,
+                todoData: newArray,
+                sort: sort === 'num' ? 'alpha' : 'num'
+            };
         }
         default:
             return state

@@ -31,15 +31,22 @@ const editTodo = ({id, text}) => ({
     payload: {id, text}
 });
 
+const sortTodo = () => ({
+    type: SORT_TODO,
+    payload: ''
+});
+
 export {
     ADD_TODO,
     DELETE_TODO,
     MARK_TODO,
     DONE_TODO,
     EDIT_TODO,
+    SORT_TODO,
     addTodo,
     deleteTodo,
     markTodo,
     doneTodo,
-    editTodo
+    editTodo,
+    sortTodo
 }

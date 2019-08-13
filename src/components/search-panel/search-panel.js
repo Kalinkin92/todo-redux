@@ -22,7 +22,7 @@ export default class SearchPanel extends Component {
                    placeholder="type to search"
                    onChange={ this.onSearchChange }
                    value={ this.state.filter }
-                   style ={{display: 'none'}}
+                   style ={{visibility: "hidden"}}
             />
         );
     }
