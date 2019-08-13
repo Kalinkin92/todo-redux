@@ -6,6 +6,7 @@ import SearchPanel from '../search-panel';
 import TodoList from '../todo-list';
 import ItemStatusFilter from '../item-status-filter';
 import ItemAddForm from '../item-add-form';
+import SortButton from '../sort-button';
 
 import './app.css';
 
@@ -13,9 +14,6 @@ export default class App extends Component {
 
     state = {
         todoData: [
-            /*{ label: 'Drink Coffee', important: false, done: false, id: 1 },
-            { label: 'Make Awesome App', important: true, done: false, id: 2 },
-            { label: 'Have a lunch', important: false, done: false, id: 3 }*/
             { label: 'Выпить чаю', important: false, done: false, id: 1 },
             { label: 'Покормить кошку', important: false, done: false, id: 2 },
             { label: 'Приготовить Игорьку, что-нибудь очень вкусное, пожрать', important: false, done: false, id: 3 }
@@ -67,6 +65,8 @@ export default class App extends Component {
                 <div className="top-panel d-flex">
                   <SearchPanel
                       onSearchChange={ this.changeFilter } />
+                    <SortButton />
+
                   <ItemStatusFilter
                       onFilterChange={ this.changeStatus }
                       status={ status }
@@ -74,10 +74,7 @@ export default class App extends Component {
                 </div>
 
                 <TodoList />
-
-                <ItemAddForm
-                    // onItemAdded={this.addItem}
-                />
+                <ItemAddForm/>
             </div>
         );
   }

@@ -3,7 +3,8 @@ const
     DELETE_TODO = 'DELETE_TODO',
     DONE_TODO = 'DONE_TODO',
     MARK_TODO = 'MARK_TODO',
-    EDIT_TODO = 'EDIT_TODO';
+    EDIT_TODO = 'EDIT_TODO',
+    SORT_TODO = 'SORT_TODO';
 
 const addTodo = (text) => ({
     type: ADD_TODO,

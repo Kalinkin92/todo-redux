@@ -17,7 +17,8 @@ const initialState = {
     ],
     filter: '',
     status: 'all',
-    max: 100
+    max: 100,
+    sort: 'dec'
 };
 
 const reducer = (state = initialState, action) => {
