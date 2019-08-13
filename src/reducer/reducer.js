@@ -79,6 +79,7 @@ const reducer = (state = initialState, action) => {
             newArray[idx].done = !newArray[idx].done;
 
             return {
+                ...state,
                 todoData: newArray
             };
         }
@@ -91,6 +92,7 @@ const reducer = (state = initialState, action) => {
             newArray[idx].label = text;
 
             return {
+                ...state,
                 todoData: newArray
             };
 
