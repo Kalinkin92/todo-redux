@@ -4,7 +4,8 @@ import {
     ADD_TODO,
     DELETE_TODO,
     MARK_TODO,
-    DONE_TODO
+    DONE_TODO,
+    EDIT_TODO
 } from '../actions/actions'
 
 const initialState = {
@@ -23,14 +24,18 @@ const reducer = (state = initialState, action) => {
     switch (action.type) {
         case ADD_TODO: {
             const text = action.payload;
-            const { todoData } = state;
+            const { todoData, max } = state;
+            const id = max + 1;
             const newItem = {
                 label: text,
                 important: false,
-                id: state.max++
+                done: false,
+                id
             };
 
             return {
+                ...state,
+                max: id,
                 todoData: [
                     ...todoData,
                     newItem
@@ -76,6 +81,19 @@ const reducer = (state = initialState, action) => {
             return {
                 todoData: newArray
             };
+        }
+
+        case EDIT_TODO: {
+            const { id, text } = action.payload;
+            const { todoData } = state;
+            const idx = todoData.findIndex((el) => el.id === id);
+            const newArray = [...todoData];
+            newArray[idx].label = text;
+
+            return {
+                todoData: newArray
+            };
+
         }
         default:
             return state

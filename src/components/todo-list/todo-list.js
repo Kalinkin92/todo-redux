@@ -3,13 +3,14 @@ import { connect } from 'react-redux';
 import { 
     deleteTodo, 
     markTodo,
-    doneTodo
+    doneTodo,
+    editTodo,
 } from '../../actions/actions';
 
 import TodoListItem from '../todo-list-item';
 import './todo-list.css';
 
-const TodoList = ({ todoData, deleteTodo, doneTodo, markTodo }) => {
+const TodoList = ({ todoData, deleteTodo, doneTodo, markTodo, editTodo }) => {
 
   const elements = todoData.map((item) => {
     const { id, ...itemProps } = item;
@@ -20,7 +21,9 @@ const TodoList = ({ todoData, deleteTodo, doneTodo, markTodo }) => {
           {...itemProps }
           onDeleted={() => deleteTodo(id)}
           onLabelClick={() => doneTodo(id)}
-          onMarkImportant={() => markTodo(id)}/>
+          onMarkImportant={() => markTodo(id)}
+          onLabelChange={(text) => editTodo({id, text})}
+        />
       </li>
     );
   });
@@ -42,7 +45,8 @@ const mapDispatchToProps = (dispatch) => {
     return {
         deleteTodo: (id) => dispatch(deleteTodo(id)),
         markTodo: (id) => dispatch(markTodo(id)),
-        doneTodo: (id) => dispatch(doneTodo(id))
+        doneTodo: (id) => dispatch(doneTodo(id)),
+        editTodo: ({id, text}) => dispatch(editTodo({id, text}))
     }
 };
 
